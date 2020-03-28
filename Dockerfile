@@ -1,10 +1,10 @@
-FROM ubuntu:xenial
+FROM ubuntu:bionic
 MAINTAINER Lars Kellogg-Stedman <lars@oddbit.com>
 
 ENV SQUEEZE_VOL /srv/squeezebox
 ENV LANG C.UTF-8
 ENV DEBIAN_FRONTEND noninteractive
-ENV PACKAGE_VERSION_URL=http://www.mysqueezebox.com/update/?version=7.9.0&revision=1&geturl=1&os=deb
+ENV PACKAGE_VERSION_URL=http://www.mysqueezebox.com/update/?version=7.9.3&revision=1&geturl=1&os=deb
 
 RUN apt-get update && \
 	apt-get -y install \
